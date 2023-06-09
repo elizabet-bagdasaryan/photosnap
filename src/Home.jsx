@@ -1,0 +1,147 @@
+import { useState } from "react";
+import Footer from "./Footer";
+import Header from "./Header";
+import Tourist from "./assets/tourist.png";
+import Arrow from "./assets/arrow.png";
+import Desk from "./assets/desk.png";
+import ArrowBlack from "./assets/arrow-black.png";
+import "./Home.css";
+import Camera from "./assets/camera.png";
+import Mountain from "./assets/mountain.png";
+import Cityscape from "./assets/cityscape.png";
+import Voyage from "./assets/voyage.png";
+import Architecture from "./assets/architecture.png";
+import Gadgets from "./assets/gadgets.png";
+import Infinity from "./assets/infinity.png";
+import Socials from "./assets/socials.png";
+function Home() {
+  return (
+    <>
+      <Header />
+      <img src={Tourist} className="w-full" />
+      <div className="bg-black px-14 py-8 create ">
+        <h2 className="text-white uppercase text-3xl mt-12 mb-4 font-bold">
+          Create and share your photo stories.{" "}
+        </h2>
+        <p className="opacity-60 leading-12 ">
+          Photosnap is a platform for photographers and visual storytellers. We
+          make it easy to share photos, tell stories and connect with others.
+        </p>
+        <div className="flex mt-4">
+          <p className="text-white mr-4 ">GET AN INVITE </p>
+          <img src={Arrow} className="h-3 mt-1" />
+        </div>
+      </div>
+      <img src={Desk} className="w-full" />
+      <div className=" px-14 py-8 create ">
+        <h2 className="text-black uppercase text-3xl mt-12 mb-4 font-bold">
+          BEAUTIFUL STORIES EVERY TIME
+        </h2>
+        <p className="opacity-60 leading-12 text-black">
+          We provide design templates to ensure your stories look terrific.
+          Easily add photos, text, embed maps and media from other networks.
+          Then share your story with everyone.
+        </p>
+        <div className="flex mt-4">
+          <p className="text-black mr-4 font-bold">VIEW THE STORIES </p>
+          <img src={ArrowBlack} className="h-3 mt-1" />
+        </div>
+      </div>
+      <img src={Camera} className="w-full" />
+      <div className=" px-14 py-8 create ">
+        <h2 className="text-black uppercase text-3xl mt-12 mb-4 font-bold">
+          DESIGNED FOR EVERYONE
+        </h2>
+        <p className="opacity-60 leading-12 text-black">
+          Photosnap can help you create stories that resonate with your
+          audience. Our tool is designed for photographers of all levels,
+          brands, businesses you name it.{" "}
+        </p>
+        <div className="flex mt-4">
+          <p className="text-black mr-4 font-bold">VIEW THE STORIES </p>
+          <img src={ArrowBlack} className="h-3 mt-1" />
+        </div>
+      </div>
+      {/* ----------------------------------------------------------------- */}
+      <div className="relative">
+        <img src={Mountain} className="w-full " />
+        <div className="absolute bottom-0 left-0 w-full p-8">
+          <h2 className="text-white text-xl font-bold">The Mountains</h2>
+          <p>by John Appleseed</p>
+          <hr className="opacity-25 mt-2" />
+          <div className="flex justify-between  mt-4">
+            <p className="text-white  font-bold">READ STORY </p>
+            <img src={Arrow} className="h-3 mt-1" />
+          </div>
+        </div>
+      </div>
+      {/* ----------------------------------------------------------------- */}
+      <div className="relative">
+        <img src={Cityscape} className="w-full" />
+        <div className="absolute bottom-0 left-0 w-full p-8">
+          <h2 className="text-white text-xl font-bold">Sunset Cityscapes</h2>
+          <p>by Benjamin Cruz</p>
+          <hr className="opacity-25 mt-2" />
+          <div className="flex mt-4 justify-between">
+            <p className="text-white mr-4 font-bold">READ STORY </p>
+            <img src={Arrow} className="h-3 mt-1" />
+          </div>
+        </div>
+      </div>
+      {/* ----------------------------------------------------------------- */}
+      <div className="relative">
+        <img src={Voyage} className="w-full" />
+        <div className="absolute bottom-0 left-0 w-full p-8">
+          <h2 className="text-white text-xl font-bold">18 Days Voyage</h2>
+          <p>by Alexei Borodin</p>
+          <hr className="opacity-25 mt-2" />
+          <div className="flex mt-4 justify-between">
+            <p className="text-white mr-4 font-bold">READ STORY </p>
+            <img src={Arrow} className="h-3 mt-1" />
+          </div>
+        </div>
+      </div>
+      {/* ----------------------------------------------------------------- */}
+      <div className="relative">
+        <img src={Architecture} className="w-full" />
+        <div className="absolute bottom-0 left-0 w-full p-8">
+          <h2 className="text-white text-xl font-bold">Architecturals</h2>
+          <p>by Samantha Brooke</p>
+          <hr className="opacity-25 mt-2" />
+          <div className="flex mt-4 justify-between">
+            <p className="text-white mr-4 font-bold">READ STORY </p>
+            <img src={Arrow} className="h-3 mt-1" />
+          </div>
+        </div>
+      </div>
+
+      <div className="p-8 text-center pt-16">
+        <img src={Gadgets} className="mx-auto" />
+        <h2 className="font-bold py-4 pt-12">100% Responsive</h2>
+        <p className="text-black opacity-60 px-14 leading-6">
+          No matter which the device you’re on, our site is fully responsive and
+          stories look beautiful on any screen.
+        </p>
+      </div>
+      <div className="p-8 text-center pt-16">
+        <img src={Infinity} className="mx-auto" />
+        <h2 className="font-bold py-4 pt-12">No Photo Upload Limit</h2>
+        <p className="text-black opacity-60 px-14 leading-6">
+          Our tool has no limits on uploads or bandwidth. Freely upload in bulk
+          and share all of your stories in one go.
+        </p>
+      </div>
+      <div className="p-8 text-center pt-16 mb-16">
+        <img src={Socials} className="mx-auto" />
+        <h2 className="font-bold py-4 pt-12">Available to Embed</h2>
+        <p className="text-black opacity-60 px-14 leading-6">
+          Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube
+          videos, Google Maps, and more.
+        </p>
+      </div>
+      <Footer />
+    </>
+  );
+}
+
+export default Home;

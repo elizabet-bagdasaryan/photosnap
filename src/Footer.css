@@ -1,0 +1,14 @@
+p {
+  color: white;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.invite {
+  width: 180px;
+  margin: auto;
+}
+
+.invite p {
+  margin-top: 94px;
+}
