@@ -1,0 +1,142 @@
+.moon {
+  background-color: black;
+  padding: 48px 30px;
+}
+.moon h2 {
+  font-size: 32px;
+}
+.moon-desk {
+  display: none;
+}
+.moon-tab {
+  display: none;
+}
+.moon p:nth-child(1) {
+  word-spacing: 4px;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .moon-mob {
+    display: none;
+  }
+  .moon-desk {
+    display: none;
+  }
+  .moon-tab {
+    display: block;
+  }
+  .fullmoon {
+    position: relative;
+  }
+  .moon {
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    margin-top: 100px;
+  }
+  .fullmoon h2 {
+    font-size: 64px;
+    width: 500px;
+  }
+  .paragraph {
+    width: 500px;
+    font-size: 18px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: 1336px) {
+  .tour,
+  .corners,
+  .lion,
+  .trip,
+  .sea,
+  .horse,
+  .waves,
+  .waters,
+  .milkyway,
+  .forest,
+  .beauty,
+  .dreams {
+    transition: transform 0.3s ease;
+  }
+
+  .tour:hover,
+  .corners:hover,
+  .lion:hover,
+  .trip:hover,
+  .sea:hover,
+  .horse:hover,
+  .waves:hover,
+  .waters:hover,
+  .milkyway:hover,
+  .forest:hover,
+  .beauty:hover,
+  .dreams:hover {
+    transform: translateY(-16px);
+    cursor: pointer;
+  }
+
+  .tour::after,
+  .corners:after,
+  .lion:after,
+  .trip:after,
+  .sea:after,
+  .horse:after,
+  .waves:after,
+  .waters:after,
+  .milkyway:after,
+  .forest:after,
+  .beauty:after,
+  .dreams:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+  }
+
+  .tour:hover::after,
+  .corners:hover::after,
+  .lion:hover::after,
+  .trip:hover::after,
+  .sea:hover::after,
+  .horse:hover::after,
+  .waves:hover::after,
+  .waters:hover::after,
+  .milkyway:hover::after,
+  .forest:hover::after,
+  .beauty:hover::after,
+  .dreams:hover::after {
+    background: linear-gradient(
+      26.57deg,
+      #ffc593 0%,
+      #bc7198 43.29%,
+      #5a77ff 83.33%
+    );
+  }
+  .moon-mob {
+    display: none;
+  }
+  .moon-tab {
+    display: none;
+  }
+  .moon-desk {
+    display: block;
+    width: 160%;
+    height: 170%;
+  }
+
+  .fullmoon h2 {
+    font-size: 3vw;
+  }
+  .moon {
+    padding: 0 140px;
+    margin-top: 7vw;
+  }
+}
