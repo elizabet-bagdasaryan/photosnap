@@ -28,6 +28,7 @@ function Home() {
       <div className="tourists">
         <img src={Tourist} className="w-full big-img" />
         <div className="bg-black px-14 py-8 create ">
+          <div className="line "></div>
           <h2 className="text-white uppercase text-3xl mt-12 mb-4 font-bold">
             Create and share your photo stories.{" "}
           </h2>

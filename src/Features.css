@@ -1,0 +1,56 @@
+.line {
+  background: linear-gradient(
+    26.57deg,
+    #ffc593 0%,
+    #bc7198 43.29%,
+    #5a77ff 83.33%
+  );
+  height: 6px;
+  width: 130px;
+  position: absolute;
+  margin-left: 50px;
+}
+.beta-img {
+  width: 100vw;
+  height: 400px;
+}
+
+.beta h2 {
+  line-height: 46px;
+}
+.invites p {
+  letter-spacing: 3px;
+  margin-top: 0;
+}
+.photo-tab {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .photo-mob {
+    display: none;
+  }
+  .photo-tab {
+    display: block;
+  }
+  .feature {
+    display: flex;
+  }
+  .beta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #line2 {
+    height: 400px;
+    width: 6px;
+    margin-left: 0;
+    margin-top: 116px;
+  }
+
+  #line1 {
+    width: 6px;
+    height: 67.5%;
+    margin-left: 0;
+  }
+}
