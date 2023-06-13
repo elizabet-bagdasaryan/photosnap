@@ -1,3 +1,8 @@
+.foot-wrapper {
+  text-align: center;
+  padding-top: 64px;
+  overflow-x: hidden;
+}
 p {
   color: white;
   font-size: 14px;
@@ -7,8 +12,110 @@ p {
 .invite {
   width: 180px;
   margin: auto;
+  margin-top: 94px;
 }
 
-.invite p {
-  margin-top: 94px;
+.nav p {
+  margin: 16px 0;
+}
+.logo {
+  margin: auto;
+}
+.nav {
+  margin-top: 58px;
+}
+@media (min-width: 768px) {
+  .foot-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "logo invite"
+      "nav ."
+      "icons copyright";
+    padding: 64px 40px 0;
+    text-align: initial;
+  }
+
+  .logo {
+    grid-area: logo;
+    margin: 0;
+  }
+
+  .invite {
+    grid-area: invite;
+    margin: 0;
+    margin-left: auto;
+    width: auto;
+  }
+  .invite p {
+    letter-spacing: 3px;
+    margin-top: 0;
+  }
+  .nav {
+    grid-area: nav;
+    display: flex;
+    margin-top: 0;
+  }
+
+  .icons {
+    grid-area: icons;
+  }
+
+  .copyright {
+    grid-area: copyright;
+    margin-left: auto;
+  }
+
+  .nav p {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 1336px) {
+  .nav p:hover {
+    opacity: 0.3;
+    cursor: pointer;
+  }
+
+  .foot-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "logo nav invite"
+      "icons . copyright";
+  }
+
+  .logo {
+    grid-area: logo;
+  }
+
+  .invite {
+    grid-area: invite;
+  }
+
+  .icons {
+    grid-area: icons;
+  }
+
+  .copyright {
+    grid-area: copyright;
+  }
+
+  .nav {
+    grid-area: nav;
+    display: block;
+    margin-left: 20vw;
+    margin-top: -130px;
+  }
+  .nav p {
+    margin: 24px 0;
+  }
 }

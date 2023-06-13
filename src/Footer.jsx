@@ -10,26 +10,29 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <footer className="bg-black text-center">
-      <img src={Logo} className="mx-auto pt-16" />
+    <footer className="bg-black  foot-wrapper">
+      <img src={Logo} className=" logo" />
       <div className="icons mt-8">
-        <FacebookIcon className="text-white mr-2" />
-        <YouTubeIcon className="text-white mr-2" />
-        <TwitterIcon className="text-white mr-2" />
-        <PinterestIcon className="text-white mr-2" />
-        <InstagramIcon className="text-white mr-2" />
+        <FacebookIcon className="text-white mr-2  hover:text-blue-400 cursor-pointer" />
+
+        <YouTubeIcon className="text-white mr-2 hover:text-red-600 cursor-pointer" />
+        <TwitterIcon className="text-white mr-2 hover:text-teal-400 cursor-pointer " />
+        <PinterestIcon className="text-white mr-2 hover:text-orange-400 cursor-pointer" />
+        <InstagramIcon className="text-white mr-2 text-white mr-2 hover:text-pinkcustom cursor-pointer" />
       </div>
-      <div className="nav mt-14">
+      <div className="nav">
         <p>HOME</p>
         <p>STORIES</p>
         <p>FEATURES</p>
         <p>PRICING</p>
       </div>
       <div className="flex invite">
-        <p className="text-white mr-4 ">GET AN INVITE </p>
-        <img src={Arrow} className="h-4 mt-24" />
+        <p className="text-white mr-4 hover:underline hover:text-white cursor-pointer">
+          GET AN INVITE{" "}
+        </p>
+        <img src={Arrow} className="h-4 " />
       </div>
-      <p className="text-white opacity-60 py-10">
+      <p className="text-white opacity-60 py-10 copyright">
         Copyright 2019. All Rights Reserved
       </p>
     </footer>

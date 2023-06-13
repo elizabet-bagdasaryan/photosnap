@@ -1,0 +1,51 @@
+.header {
+  padding: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar {
+  display: none;
+}
+.get-invite {
+  display: none;
+}
+@media (min-width: 768px) {
+  .header {
+    justify-content: space-evenly;
+  }
+
+  .hamburger {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+  }
+  .navbar p {
+    color: black;
+    font-weight: 600;
+    margin: 0 10px;
+  }
+
+  .get-invite {
+    color: white;
+    background-color: black;
+    padding: 10px 20px;
+    margin-top: -10px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    display: block;
+  }
+}
+
+@media (min-width: 1336px) {
+  .navbar p:hover {
+    opacity: 0.3;
+    cursor: pointer;
+  }
+  .get-invite:hover {
+    background-color: #dfdfdf;
+    color: black;
+    cursor: pointer;
+  }
+}

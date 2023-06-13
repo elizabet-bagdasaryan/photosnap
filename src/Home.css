@@ -5,3 +5,158 @@
 .create p:nth-child(2) {
   font-size: 16px;
 }
+.tab-img {
+  display: none;
+}
+.inv-views {
+  margin: 30px 0;
+}
+.desk-img {
+  display: none;
+}
+@media (min-width: 768px) {
+  .stories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+  }
+
+  .mountains {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .nav {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .cityscape {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .voyage {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .architecture {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .big-img {
+    display: none;
+  }
+  .tab-img {
+    display: block;
+  }
+  .cameras,
+  .desks,
+  .tourists {
+    display: flex;
+  }
+
+  .cameras h2,
+  .desks h2,
+  .tourists h2 {
+    font-size: 40px;
+    margin-top: 150px;
+    width: 400px;
+  }
+
+  .inv-views {
+    margin: 48px 0 0 0;
+  }
+}
+
+@media (min-width: 1336px) {
+  .tab-img {
+    display: none;
+  }
+
+  .desk-img {
+    display: block;
+    width: 54vw;
+  }
+  #camera-desk {
+    width: 60vw;
+  }
+  .stories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "mountains cityscape voyage architecture";
+  }
+
+  .mountains {
+    grid-area: mountains;
+  }
+
+  .cityscape {
+    grid-area: cityscape;
+  }
+
+  .voyage {
+    grid-area: voyage;
+  }
+
+  .architecture {
+    grid-area: architecture;
+  }
+  .details {
+    display: flex;
+    padding: 120px 0;
+  }
+  .architecture,
+  .voyage,
+  .cityscape,
+  .mountain {
+    transition: transform 0.3s ease;
+  }
+
+  .architecture:hover,
+  .voyage:hover,
+  .cityscape:hover,
+  .mountain:hover {
+    transform: translateY(-16px);
+    cursor: pointer;
+  }
+
+  .architecture::after,
+  .voyage:after,
+  .cityscape:after,
+  .mountain:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+  }
+
+  .architecture:hover::after,
+  .voyage:hover::after,
+  .cityscape:hover::after,
+  .mountain:hover::after {
+    background: linear-gradient(
+      26.57deg,
+      #ffc593 0%,
+      #bc7198 43.29%,
+      #5a77ff 83.33%
+    );
+  }
+  .cameras h2,
+  .desks h2,
+  .tourists h2 {
+    font-size: 40px;
+    margin-top: 150px;
+  }
+  /* .paragraphs {
+    margin-right: 0;
+    width: 390px;
+  } */
+}
