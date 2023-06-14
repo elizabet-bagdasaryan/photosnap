@@ -34,6 +34,9 @@
 .create-feat {
   padding: 8vw 14vw;
 }
+#line1 {
+  margin-left: 12vw;
+}
 @media (min-width: 768px) {
   .photo-mob {
     display: none;
@@ -73,7 +76,7 @@
     height: 144px;
     margin-left: 0;
   }
-  .details {
+  .detailss {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -121,7 +124,7 @@
 }
 
 @media (min-width: 1336px) {
-  .details {
+  .detailss {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
