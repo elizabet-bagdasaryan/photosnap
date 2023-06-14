@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Compare.css";
-import Tick from "./assets/tick.png";
-import Horizontal from "./assets/horizontal.png";
+import Tick from "../../assets/tick.png";
+import Horizontal from "../../assets/horizontal.png";
 function Compare() {
   return (
     <div className="main">

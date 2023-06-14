@@ -1,19 +1,18 @@
-import { useState } from "react";
-import Footer from "./Footer";
-import Header from "./Header";
-import Arrow from "./assets/arrow.png";
+import Footer from "../../Components/Footer/Footer";
+import Header from "../../Components/Header/Header";
+import Arrow from "../../assets/arrow.png";
 import "./Features.css";
-import Photograph from "./assets/photograph.png";
-import Gadgets from "./assets/gadgets.png";
-import Infinity from "./assets/infinity.png";
-import Socials from "./assets/socials.png";
-import Domain from "./assets/domain.png";
-import Exposure from "./assets/exposure.png";
-import Image from "./assets/image.png";
-import Beta from "./assets/beta.png";
-import PhotographTab from "./assets/photograph-tab.png";
-import PhotographDesk from "./assets/photograph-desk.png";
-import BetaDesk from "./assets/beta-desk.png";
+import Photograph from "../../assets/photograph.png";
+import Gadgets from "../../assets/gadgets.png";
+import Infinity from "../../assets/infinity.png";
+import Socials from "../../assets/socials.png";
+import Domain from "../../assets/domain.png";
+import Exposure from "../../assets/exposure.png";
+import Image from "../../assets/image.png";
+import Beta from "../../assets/beta.png";
+import PhotographTab from "../../assets/photograph-tab.png";
+import PhotographDesk from "../../assets/photograph-desk.png";
+import BetaDesk from "../../assets/beta-desk.png";
 function Features() {
   return (
     <>

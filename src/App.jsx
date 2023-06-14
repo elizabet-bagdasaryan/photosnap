@@ -1,14 +1,13 @@
-import { useState } from "react";
 import "./App.css";
-import Home from "./Home";
-import Stories from "./Stories";
-import Features from "./Features";
-import Pricing from "./Pricing";
+import Home from "./Pages/Home/Home";
+import Stories from "./Pages/Stories/Stories";
+import Features from "./Pages/Features/Features";
+import Pricing from "./Pages/Pricing/Pricing";
 
 function App() {
   return (
     <>
-      <Stories />
+      <Features />
     </>
   );
 }

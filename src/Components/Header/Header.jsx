@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import "./Header.css";
-import Logo from "./assets/logo.png";
-import Hamburger from "./assets/hamburger.jpg";
-import Cross from "./assets/cross.png";
+import Logo from "../../assets/logo.png";
+import Hamburger from "../../assets/hamburger.jpg";
+import Cross from "../../assets/cross.png";
 
 function Header() {
   const [menuVisible, setMenuVisible] = useState(false);

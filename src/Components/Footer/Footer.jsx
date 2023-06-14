@@ -4,8 +4,8 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import PinterestIcon from "@mui/icons-material/Pinterest";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import Logo from "./assets/logo-light.png";
-import Arrow from "./assets/arrow.png";
+import Logo from "../../assets/logo-light.png";
+import Arrow from "../../assets/arrow.png";
 import "./Footer.css";
 
 function Footer() {

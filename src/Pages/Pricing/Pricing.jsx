@@ -1,14 +1,14 @@
 import { useState } from "react";
-import Footer from "./Footer";
-import Header from "./Header";
-import Arrow from "./assets/arrow.png";
+import Footer from "../../Components/Footer/Footer";
+import Header from "../../Components/Header/Header";
+import Arrow from "../../assets/arrow.png";
 import "./Pricing.css";
-import BetaDesk from "./assets/beta-desk.png";
-import Beta from "./assets/beta.png";
-import PricingImg from "./assets/pricing.png";
-import PricingTab from "./assets/pricing-tab.png";
-import PricingDesk from "./assets/pricing-desk.png";
-import Compare from "./Compare";
+import BetaDesk from "../../assets/beta-desk.png";
+import Beta from "../../assets/beta.png";
+import PricingImg from "../../assets/pricing.png";
+import PricingTab from "../../assets/pricing-tab.png";
+import PricingDesk from "../../assets/pricing-desk.png";
+import Compare from "../../Components/Compare/Compare";
 function Pricing() {
   const [billing, setBilling] = useState(false);
   const [chosenPlan, setChosenPlan] = useState(2);

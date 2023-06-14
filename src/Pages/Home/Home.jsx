@@ -1,25 +1,25 @@
 import { useState } from "react";
-import Footer from "./Footer";
-import Header from "./Header";
-import Tourist from "./assets/tourist.png";
-import Arrow from "./assets/arrow.png";
-import Desk from "./assets/desk.png";
-import ArrowBlack from "./assets/arrow-black.png";
+import Footer from "../../Components/Footer/Footer";
+import Header from "../../Components/Header/Header";
+import Tourist from "../../assets/tourist.png";
+import Arrow from "../../assets/arrow.png";
+import Desk from "../../assets/desk.png";
+import ArrowBlack from "../../assets/arrow-black.png";
 import "./Home.css";
-import Camera from "./assets/camera.png";
-import Mountain from "./assets/mountain.png";
-import Cityscape from "./assets/cityscape.png";
-import Voyage from "./assets/voyage.png";
-import Architecture from "./assets/architecture.png";
-import Gadgets from "./assets/gadgets.png";
-import Infinity from "./assets/infinity.png";
-import Socials from "./assets/socials.png";
-import CameraTab from "./assets/camera-tablet.png";
-import DeskTab from "./assets/desk-tablet.png";
-import TouristTab from "./assets/tourist-tablet.png";
-import CameraDesk from "./assets/camera-desk.jpg";
-import DeskDesk from "./assets/desk-desk.jpg";
-import TouristDesk from "./assets/tourist-desk.jpg";
+import Camera from "../../assets/camera.png";
+import Mountain from "../../assets/mountain.png";
+import Cityscape from "../../assets/cityscape.png";
+import Voyage from "../../assets/voyage.png";
+import Architecture from "../../assets/architecture.png";
+import Gadgets from "../../assets/gadgets.png";
+import Infinity from "../../assets/infinity.png";
+import Socials from "../../assets/socials.png";
+import CameraTab from "../../assets/camera-tablet.png";
+import DeskTab from "../../assets/desk-tablet.png";
+import TouristTab from "../../assets/tourist-tablet.png";
+import CameraDesk from "../../assets/camera-desk.jpg";
+import DeskDesk from "../../assets/desk-desk.jpg";
+import TouristDesk from "../../assets/tourist-desk.jpg";
 
 function Home() {
   return (
