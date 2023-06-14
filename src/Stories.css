@@ -15,6 +15,7 @@
   word-spacing: 4px;
   font-weight: bold;
 }
+
 @media (min-width: 768px) {
   .moon-mob {
     display: none;
