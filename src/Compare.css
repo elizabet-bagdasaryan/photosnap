@@ -1,0 +1,46 @@
+.main {
+  padding: 4vw 10vw;
+}
+
+.main hr {
+  margin: 20px 0;
+}
+.main p {
+  margin: 10px 0;
+}
+
+.plan-options {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  section {
+    display: flex;
+    justify-content: space-between;
+  }
+  section img {
+    margin: 0 50px;
+  }
+  section p {
+    display: none;
+  }
+  .plan-headers p {
+    margin: 0 32px;
+  }
+  .plan-options {
+    display: flex;
+  }
+}
+
+@media (min-width: 1336px) {
+  .main {
+    padding: 4vw 24vw;
+  }
+  section img {
+    margin: 0 60px;
+  }
+
+  .plan-headers p {
+    margin: 0 42px;
+  }
+}

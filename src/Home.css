@@ -14,6 +14,11 @@
 .desk-img {
   display: none;
 }
+#line-tour {
+  margin-top: -32px;
+  margin-left: -2vw;
+  width: 130px;
+}
 @media (min-width: 768px) {
   .stories {
     display: grid;
@@ -66,6 +71,15 @@
   .inv-views {
     margin: 48px 0 0 0;
   }
+  .tourists h4 {
+    margin-right: 10vw;
+  }
+  #line-tour {
+    height: 320px;
+    width: 6px;
+    margin-left: -56px;
+    margin-top: 140px;
+  }
 }
 
 @media (min-width: 1336px) {
@@ -75,7 +89,8 @@
 
   .desk-img {
     display: block;
-    width: 54vw;
+    width: 60%;
+    height: 32%;
   }
   #camera-desk {
     width: 60vw;

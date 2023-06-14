@@ -28,22 +28,22 @@ function Home() {
       <div className="tourists">
         <img src={Tourist} className="w-full big-img" />
         <div className="bg-black px-14 py-8 create ">
-          <div className="line "></div>
+          <div className="line" id="line-tour"></div>
           <h2 className="text-white uppercase text-3xl mt-12 mb-4 font-bold">
             Create and share your photo stories.{" "}
           </h2>
-          <p className="opacity-60 leading-12 paragraphs">
+          <h4 className="opacity-60 leading-12 paragraphs text-white">
             Photosnap is a platform for photographers and visual storytellers.
             We make it easy to share photos, tell stories and connect with
             others.
-          </p>
+          </h4>
           <div className="flex  inv-views hover:underline hover:text-white cursor-pointer">
             <p className="text-white mr-4 ">GET AN INVITE </p>
             <img src={Arrow} className="h-3 mt-1" />
           </div>
         </div>
         <img src={TouristTab} className="tab-img" />
-        <img src={TouristDesk} className="desk-img" />
+        <img src={TouristDesk} className="desk-img " />
       </div>
       <div className="desks">
         <img src={Desk} className="w-full big-img" />

@@ -11,9 +11,18 @@ import PricingDesk from "./assets/pricing-desk.png";
 import Compare from "./Compare";
 function Pricing() {
   const [billing, setBilling] = useState(false);
+  const [chosenPlan, setChosenPlan] = useState(2);
 
   const handleBilling = () => {
     setBilling((prevState) => !prevState);
+  };
+
+  const handlePlanChoosing = (divNumber) => {
+    setChosenPlan(divNumber);
+  };
+
+  const getDivClassName = (divNumber) => {
+    return divNumber === chosenPlan ? "active" : "plans";
   };
 
   return (
@@ -56,77 +65,64 @@ function Pricing() {
         </p>
       </div>
       <div className="pricing ">
-        <div className="bg-gray-100 plans">
+        <div
+          className={getDivClassName(1)}
+          onClick={() => handlePlanChoosing(1)}
+        >
+          <div className="line3 "></div>
           <div className="info">
-            <h2 className="text-2xl text-black font-bold pt-20">Basic</h2>
-            <p className="text-black opacity-60 mt-4 mb-12">
+            <h2>Basic</h2>
+            <p>
               Includes basic usage of our platform. Recommended for new and
               aspiring photographers.
             </p>
-            <button className="bg-black text-white w-full py-3 text-sm mt-12 mb-8 ">
-              PICK PLAN
-            </button>
+            <button className=" w-full ">PICK PLAN</button>
           </div>
           <div className="price">
-            {billing ? (
-              <h1 className="text-4xl text-black font-bold mb-2">$ 190.00</h1>
-            ) : (
-              <h1 className="text-4xl text-black font-bold mb-2">$ 19.00</h1>
-            )}
+            {billing ? <h1>$ 190.00</h1> : <h1>$ 19.00</h1>}
 
-            <p className="text-black opacity-60">per month</p>
+            <p>per month</p>
           </div>
-          <button className="bg-black text-white w-full py-3 text-sm mt-12 mb-8  ">
-            PICK PLAN
-          </button>
+          <button className="w-full ">PICK PLAN</button>
         </div>
 
-        <div className="bg-black plans">
+        <div
+          className={getDivClassName(2)}
+          onClick={() => handlePlanChoosing(2)}
+        >
           <div className="line3 "></div>
           <div className="info">
-            <h2 className="text-2xl text-white font-bold pt-20">Pro</h2>
-            <p className="text-white opacity-60 mt-4 mb-12">
+            <h2>Pro</h2>
+            <p>
               More advanced features available. Recommended for photography
               veterans and professionals.
             </p>
-            <button className="bg-white text-black w-full py-3 text-sm mt-12 mb-8 ">
-              PICK PLAN
-            </button>
+            <button className=" w-full ">PICK PLAN</button>
           </div>{" "}
           <div className="price">
-            {billing ? (
-              <h1 className="text-4xl text-white font-bold mb-2">$ 390.00</h1>
-            ) : (
-              <h1 className="text-4xl text-white font-bold mb-2">$ 39.00</h1>
-            )}
-            <p className="text-white opacity-60">per month</p>
+            {billing ? <h1>$ 390.00</h1> : <h1>$ 39.00</h1>}
+            <p>per month</p>
           </div>
-          <button className="bg-white text-black w-full py-3 text-sm mt-12 mb-8 ">
-            PICK PLAN
-          </button>
+          <button className=" w-full ">PICK PLAN</button>
         </div>
-        <div className="bg-gray-100 plans">
+        <div
+          className={getDivClassName(3)}
+          onClick={() => handlePlanChoosing(3)}
+        >
+          <div className="line3 "></div>
           <div className="info">
-            <h2 className="text-2xl text-black font-bold pt-20">Business</h2>
-            <p className="text-black opacity-60 mt-4 mb-12">
+            <h2>Business</h2>
+            <p>
               Additional features available such as more detailed metrics.
               Recommended for business owners.
             </p>
-            <button className="bg-black text-white w-full py-3 text-sm mt-12 mb-8 ">
-              PICK PLAN
-            </button>
+            <button className="w-full">PICK PLAN</button>
           </div>
           <div className="price">
-            {billing ? (
-              <h1 className="text-4xl text-black font-bold mb-2">$ 990.00</h1>
-            ) : (
-              <h1 className="text-4xl text-black font-bold mb-2">$ 99.00</h1>
-            )}
-            <p className="text-black opacity-60">per month</p>
+            {billing ? <h1>$ 990.00</h1> : <h1>$ 99.00</h1>}
+            <p>per month</p>
           </div>
-          <button className="bg-black text-white w-full py-3 text-sm mt-12 mb-8 ">
-            PICK PLAN
-          </button>
+          <button className="w-full  ">PICK PLAN</button>
         </div>
       </div>
       <Compare />

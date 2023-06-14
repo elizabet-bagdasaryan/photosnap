@@ -79,20 +79,93 @@ input:checked + .slider:before {
   position: absolute;
   margin-left: -8%;
 }
+.plans {
+  background-color: #f5f5f5;
+}
+.plans .line3 {
+  display: none;
+}
+.plans h2 {
+  font-size: 32px;
+  font-weight: 600;
+  padding-top: 50px;
+}
+.plans p {
+  opacity: 0.6;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.price p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.plans h1 {
+  color: black;
+  font-weight: 600;
+  font-size: 40px;
+}
+.info button {
+  color: white;
+  background-color: black;
+  padding: 10px;
+  font-size: 14px;
+}
+.plans button {
+  color: white;
+  background-color: black;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 24px;
+  margin-top: 70px;
+}
+.active h2 {
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+  padding-top: 50px;
+}
+.active {
+  background-color: black;
+}
+.active p {
+  opacity: 0.6;
+  color: whitek;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.active h1 {
+  color: white;
+  font-weight: 600;
+  font-size: 40px;
+}
+.active button {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+.active {
+  padding: 0vw 8vw;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 24px;
+}
 @media (min-width: 768px) {
   .line3 {
     width: 6px;
-    height: 40%;
+    height: 28%;
     margin-left: -4%;
   }
-  .plans {
-    padding: 0 4vw;
-    text-align: start;
-  }
+
   .plans {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 4vw;
+    text-align: start;
   }
   .plans button {
     display: none;
@@ -107,17 +180,33 @@ input:checked + .slider:before {
   .price p {
     text-align: end;
   }
+  .active {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4vw;
+    text-align: start;
+  }
+  .active button {
+    display: none;
+  }
+  .active .info button {
+    display: block;
+  }
 }
 
 @media (min-width: 1336px) {
   .pricing {
     display: flex;
     margin: 0 10vw 5vw;
+    align-items: center;
   }
   .plans {
     display: block;
     text-align: center;
     margin: 0 2vw;
+    cursor: pointer;
+    height: 460px;
   }
   .plans button {
     display: block;
@@ -134,5 +223,28 @@ input:checked + .slider:before {
   .line3 {
     height: 6px;
     width: 22.6%;
+  }
+  .plans button:hover {
+    background-color: #dfdfdf;
+    cursor: ponter;
+    color: black;
+  }
+  .active {
+    display: block;
+    text-align: center;
+    margin: 0 2vw;
+    cursor: pointer;
+    height: 520px;
+  }
+  .active button {
+    display: block;
+  }
+  .active .info button {
+    display: none;
+  }
+  .active button:hover {
+    background-color: #dfdfdf;
+    cursor: ponter;
+    color: black;
   }
 }
