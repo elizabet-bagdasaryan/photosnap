@@ -1,0 +1,138 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 64px;
+  height: 30px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #dfdfdf;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 6px;
+  bottom: 4px;
+  background-color: black;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: black;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(28px);
+  -ms-transform: translateX(28px);
+  transform: translateX(28px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+input:checked + .slider:before {
+  background-color: white;
+}
+
+.plans {
+  padding: 0vw 8vw;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 24px;
+}
+.info button {
+  display: none;
+}
+.line3 {
+  background: linear-gradient(
+    26.57deg,
+    #ffc593 0%,
+    #bc7198 43.29%,
+    #5a77ff 83.33%
+  );
+  height: 6px;
+  width: 80%;
+  position: absolute;
+  margin-left: -8%;
+}
+@media (min-width: 768px) {
+  .line3 {
+    width: 6px;
+    height: 40%;
+    margin-left: -4%;
+  }
+  .plans {
+    padding: 0 4vw;
+    text-align: start;
+  }
+  .plans {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .plans button {
+    display: none;
+  }
+  .info button {
+    display: block;
+  }
+  .info {
+    width: 60%;
+  }
+
+  .price p {
+    text-align: end;
+  }
+}
+
+@media (min-width: 1336px) {
+  .pricing {
+    display: flex;
+    margin: 0 10vw 5vw;
+  }
+  .plans {
+    display: block;
+    text-align: center;
+    margin: 0 2vw;
+  }
+  .plans button {
+    display: block;
+  }
+  .info button {
+    display: none;
+  }
+  .info {
+    width: 100%;
+  }
+  .price p {
+    text-align: center;
+  }
+  .line3 {
+    height: 6px;
+    width: 22.6%;
+  }
+}
