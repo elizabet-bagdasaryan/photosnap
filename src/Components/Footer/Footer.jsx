@@ -7,6 +7,7 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import Logo from "../../assets/logo-light.png";
 import Arrow from "../../assets/arrow.png";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -21,10 +22,18 @@ function Footer() {
         <InstagramIcon className="text-white mr-2 text-white mr-2 hover:text-pinkcustom cursor-pointer" />
       </div>
       <div className="nav">
-        <p>HOME</p>
-        <p>STORIES</p>
-        <p>FEATURES</p>
-        <p>PRICING</p>
+        <Link to="/home">
+          <p>HOME</p>
+        </Link>
+        <Link to="/stories">
+          <p>STORIES</p>
+        </Link>
+        <Link to="/features">
+          <p>FEATURES</p>
+        </Link>
+        <Link to="/pricing">
+          <p>PRICING</p>
+        </Link>
       </div>
       <div className="flex invite">
         <p className="text-white mr-4 hover:underline hover:text-white cursor-pointer">

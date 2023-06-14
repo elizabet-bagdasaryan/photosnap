@@ -156,7 +156,7 @@ input:checked + .slider:before {
 @media (min-width: 768px) {
   .line3 {
     width: 6px;
-    height: 28%;
+    height: 32%;
     margin-left: -4%;
   }
 
@@ -246,5 +246,13 @@ input:checked + .slider:before {
     background-color: #dfdfdf;
     cursor: ponter;
     color: black;
+  }
+  .plans {
+    transition: transform 0.3s ease;
+  }
+
+  .plans:hover {
+    transform: translateY(-16px);
+    cursor: pointer;
   }
 }

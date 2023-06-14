@@ -1,6 +1,3 @@
-import { useState } from "react";
-import Footer from "../../Components/Footer/Footer";
-import Header from "../../Components/Header/Header";
 import Arrow from "../../assets/arrow.png";
 import "./Stories.css";
 import Mountain from "../../assets/mountain.png";
@@ -25,7 +22,6 @@ import MoonTab from "../../assets/moon-tab.jpg";
 function Stories() {
   return (
     <>
-      <Header />
       <div className="fullmoon">
         <img src={Moon} className="w-full moon-mob" />
         <img src={MoonTab} className="w-full moon-tab" />
@@ -288,8 +284,6 @@ function Stories() {
         </div>
         {/* ----------------------------------------------------------- */}
       </div>
-
-      <Footer />
     </>
   );
 }

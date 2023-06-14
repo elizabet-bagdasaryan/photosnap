@@ -80,6 +80,9 @@
     margin-left: -56px;
     margin-top: 140px;
   }
+  .details {
+    display: block;
+  }
 }
 
 @media (min-width: 1336px) {

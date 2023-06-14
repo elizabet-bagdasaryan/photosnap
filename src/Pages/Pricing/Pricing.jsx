@@ -1,6 +1,5 @@
 import { useState } from "react";
-import Footer from "../../Components/Footer/Footer";
-import Header from "../../Components/Header/Header";
+
 import Arrow from "../../assets/arrow.png";
 import "./Pricing.css";
 import BetaDesk from "../../assets/beta-desk.png";
@@ -27,7 +26,6 @@ function Pricing() {
 
   return (
     <>
-      <Header />
       <div className="feature">
         <img src={PricingImg} className="w-full photo-mob" />
         <div className="feature-texts">
@@ -142,8 +140,6 @@ function Pricing() {
           </div>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 }

@@ -112,8 +112,8 @@ p {
   .nav {
     grid-area: nav;
     display: block;
-    margin-left: 20vw;
-    margin-top: -130px;
+    /* margin-left: 20vw; */
+    /* margin-top: -30px; */
   }
   .nav p {
     margin: 24px 0;

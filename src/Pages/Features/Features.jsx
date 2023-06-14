@@ -1,5 +1,3 @@
-import Footer from "../../Components/Footer/Footer";
-import Header from "../../Components/Header/Header";
 import Arrow from "../../assets/arrow.png";
 import "./Features.css";
 import Photograph from "../../assets/photograph.png";
@@ -16,7 +14,6 @@ import BetaDesk from "../../assets/beta-desk.png";
 function Features() {
   return (
     <>
-      <Header />
       <div className="feature">
         <img src={Photograph} className="w-full photo-mob" />
         <div className="feature-texts">
@@ -35,7 +32,7 @@ function Features() {
         <img src={PhotographTab} className=" photo-tab " />
         <img src={PhotographDesk} className=" photo-desk w-full" />
       </div>
-      <div className="details">
+      <div className="detailss">
         <div className="p-8 text-center pt-16 responsive">
           <img src={Gadgets} className="mx-auto" />
           <h2 className="font-bold py-4 pt-12">100% Responsive</h2>
@@ -101,7 +98,6 @@ function Features() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

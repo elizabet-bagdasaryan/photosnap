@@ -1,6 +1,3 @@
-import { useState } from "react";
-import Footer from "../../Components/Footer/Footer";
-import Header from "../../Components/Header/Header";
 import Tourist from "../../assets/tourist.png";
 import Arrow from "../../assets/arrow.png";
 import Desk from "../../assets/desk.png";
@@ -24,7 +21,6 @@ import TouristDesk from "../../assets/tourist-desk.jpg";
 function Home() {
   return (
     <>
-      <Header />
       <div className="tourists">
         <img src={Tourist} className="w-full big-img" />
         <div className="bg-black px-14 py-8 create ">
@@ -163,7 +159,6 @@ function Home() {
           </p>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

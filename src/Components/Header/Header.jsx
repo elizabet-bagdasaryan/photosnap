@@ -3,6 +3,7 @@ import "./Header.css";
 import Logo from "../../assets/logo.png";
 import Hamburger from "../../assets/hamburger.jpg";
 import Cross from "../../assets/cross.png";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [menuVisible, setMenuVisible] = useState(false);
@@ -31,10 +32,18 @@ function Header() {
         />
 
         <div className="navbar">
-          <p>HOME</p>
-          <p>STORIES</p>
-          <p>FEATURES</p>
-          <p>PRICING</p>
+          <Link to="/home">
+            <p>HOME</p>
+          </Link>
+          <Link to="/stories">
+            <p>STORIES</p>
+          </Link>
+          <Link to="/features">
+            <p>FEATURES</p>
+          </Link>
+          <Link to="/pricing">
+            <p>PRICING</p>
+          </Link>
         </div>
         <p className="get-invite">GET AN INVITE</p>
       </div>
@@ -42,11 +51,19 @@ function Header() {
         style={{ display: menuVisible ? "block" : "none" }}
         className="menu-mobile px-7"
       >
-        <p>STORIES</p>
-        <p>FEATURES</p>
-        <p>PRICING</p>
+        <Link to="/stories">
+          <p>STORIES</p>
+        </Link>
+        <Link to="/features">
+          <p>FEATURES</p>
+        </Link>
+        <Link to="/pricing">
+          <p>PRICING</p>
+        </Link>
         <hr />
-        <p className="w-full bg-black py-3 ">GET AN INVITE</p>
+        <p className="w-full bg-black py-3 " id="get-invite">
+          GET AN INVITE
+        </p>
       </div>
     </>
   );
