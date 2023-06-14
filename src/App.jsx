@@ -8,7 +8,7 @@ import Pricing from "./Pricing";
 function App() {
   return (
     <>
-      <Home />
+      <Stories />
     </>
   );
 }
