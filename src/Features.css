@@ -25,7 +25,15 @@
 .photo-tab {
   display: none;
 }
-
+.beta-img-desk {
+  display: none;
+}
+.photo-desk {
+  display: none;
+}
+.create-feat {
+  padding: 8vw 14vw;
+}
 @media (min-width: 768px) {
   .photo-mob {
     display: none;
@@ -35,6 +43,18 @@
   }
   .feature {
     display: flex;
+  }
+  .feature-texts {
+    display: flex;
+    align-items: center;
+  }
+  .feature-texts h2 {
+    padding-top: 120px;
+    padding: 120px 50px 0;
+  }
+
+  .feature-texts p {
+    padding: 20px 50px 150px;
   }
   .beta {
     display: flex;
@@ -50,7 +70,104 @@
 
   #line1 {
     width: 6px;
-    height: 67.5%;
+    height: 144px;
     margin-left: 0;
+  }
+  .details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    padding: 60px 0;
+  }
+
+  .icons {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .limit {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .responsive {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .embed {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .domain {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  .exposure {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  .image {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+  .beta-img {
+    display: none;
+  }
+  .beta-img-desk {
+    display: block;
+    width: 100vw;
+    height: 400px;
+  }
+}
+
+@media (min-width: 1336px) {
+  .details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "responsive limit embed"
+      "domain exposure image";
+  }
+
+  .limit {
+    grid-area: limit;
+  }
+
+  .responsive {
+    grid-area: responsive;
+  }
+
+  .embed {
+    grid-area: embed;
+  }
+
+  .domain {
+    grid-area: domain;
+  }
+
+  .exposure {
+    grid-area: exposure;
+  }
+
+  .image {
+    grid-area: image;
+  }
+  .photo-desk {
+    display: block;
+  }
+  .photo-tab {
+    display: none;
+  }
+
+  .create-feat {
+    padding: 8vw 4vw;
+    width: 44vw;
+  }
+  .beta h2 {
+    margin-left: 6vw;
   }
 }

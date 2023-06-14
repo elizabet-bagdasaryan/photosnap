@@ -12,27 +12,32 @@ import Exposure from "./assets/exposure.png";
 import Image from "./assets/image.png";
 import Beta from "./assets/beta.png";
 import PhotographTab from "./assets/photograph-tab.png";
+import PhotographDesk from "./assets/photograph-desk.png";
+import BetaDesk from "./assets/beta-desk.png";
 function Features() {
   return (
     <>
       <Header />
       <div className="feature">
         <img src={Photograph} className="w-full photo-mob" />
-        <div className="line " id="line1"></div>
-        <div className="bg-black px-14 py-8 create ">
-          <h2 className="text-white uppercase text-3xl mt-12 mb-4 font-bold">
-            FEATURES
-          </h2>
-          <p className="opacity-60 leading-12 pb-12">
-            We make sure all of our features are designed to be loved by every
-            aspiring and even professional photograpers who wanted to share
-            their stories.
-          </p>
+        <div className="feature-texts">
+          <div className="line " id="line1"></div>
+          <div className="bg-black create-feat ">
+            <h2 className="text-white uppercase text-3xl mt-12 mb-4 font-bold">
+              FEATURES
+            </h2>
+            <p className="opacity-60 leading-12 pb-12">
+              We make sure all of our features are designed to be loved by every
+              aspiring and even professional photograpers who wanted to share
+              their stories.
+            </p>
+          </div>
         </div>
-        <img src={PhotographTab} className=" photo-tab" />
+        <img src={PhotographTab} className=" photo-tab " />
+        <img src={PhotographDesk} className=" photo-desk w-full" />
       </div>
       <div className="details">
-        <div className="p-8 text-center pt-16">
+        <div className="p-8 text-center pt-16 responsive">
           <img src={Gadgets} className="mx-auto" />
           <h2 className="font-bold py-4 pt-12">100% Responsive</h2>
           <p className="text-black opacity-60 px-14 leading-6">
@@ -40,7 +45,7 @@ function Features() {
             and stories look beautiful on any screen.
           </p>
         </div>
-        <div className="p-8 text-center pt-16">
+        <div className="p-8 text-center pt-16 limit">
           <img src={Infinity} className="mx-auto" />
           <h2 className="font-bold py-4 pt-12">No Photo Upload Limit</h2>
           <p className="text-black opacity-60 px-14 leading-6">
@@ -48,7 +53,7 @@ function Features() {
             bulk and share all of your stories in one go.
           </p>
         </div>
-        <div className="p-8 text-center pt-16 mb-16">
+        <div className="p-8 text-center pt-16 mb-16 embed">
           <img src={Socials} className="mx-auto" />
           <h2 className="font-bold py-4 pt-12">Available to Embed</h2>
           <p className="text-black opacity-60 px-14 leading-6">
@@ -56,7 +61,7 @@ function Features() {
             videos, Google Maps, and more.
           </p>
         </div>
-        <div className="p-8 text-center pt-16 mb-16">
+        <div className="p-8 text-center pt-16 mb-16 domain">
           <img src={Domain} className="mx-auto" />
           <h2 className="font-bold py-4 pt-12">Custom Domain</h2>
           <p className="text-black opacity-60 px-14 leading-6">
@@ -64,7 +69,7 @@ function Features() {
             domain. You can also remove our branding!
           </p>
         </div>
-        <div className="p-8 text-center pt-16 mb-16">
+        <div className="p-8 text-center pt-16 mb-16 exposure">
           <img src={Exposure} className="mx-auto" />
           <h2 className="font-bold py-4 pt-12">Boost Your Exposure</h2>
           <p className="text-black opacity-60 px-14 leading-6">
@@ -72,7 +77,7 @@ function Features() {
             new and featured stories with our built in mailing list.
           </p>
         </div>
-        <div className="p-8 text-center pt-16 mb-16">
+        <div className="p-8 text-center pt-16 mb-16 image">
           <img src={Image} className="mx-auto" />
           <h2 className="font-bold py-4 pt-12">Drag & Drop Image</h2>
           <p className="text-black opacity-60 px-14 leading-6">
@@ -83,6 +88,7 @@ function Features() {
       </div>
       <div className="relative ">
         <img src={Beta} className="beta-img" />
+        <img src={BetaDesk} className="beta-img-desk" />
         <div className="absolute top-0 left-0 w-full beta">
           <div className="line" id="line2"></div>
           <h2 className="uppercase text-white text-4xl p-12  mt-12">
@@ -91,7 +97,7 @@ function Features() {
             today!
           </h2>
           <div className="flex invites hover:underline hover:text-white cursor-pointer px-12">
-            <p className="text-white mr-4">GET AN INVITE </p>
+            <p className="text-white mr-6">GET AN INVITE </p>
             <img src={Arrow} className="h-3 mt-1" />
           </div>
         </div>
