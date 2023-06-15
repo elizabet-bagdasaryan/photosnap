@@ -17,8 +17,10 @@ import TouristTab from "../../assets/tourist-tablet.png";
 import CameraDesk from "../../assets/camera-desk.jpg";
 import DeskDesk from "../../assets/desk-desk.jpg";
 import TouristDesk from "../../assets/tourist-desk.jpg";
+import { useTranslation } from "react-i18next";
 
 function Home() {
+  const { t } = useTranslation();
   return (
     <>
       <div className="tourists">
@@ -26,15 +28,13 @@ function Home() {
         <div className="bg-black px-14 py-8 create ">
           <div className="line" id="line-tour"></div>
           <h2 className="text-white uppercase text-3xl mt-12 mb-4 font-bold">
-            Create and share your photo stories.{" "}
+            {t("create-home")}
           </h2>
           <h4 className="opacity-60 leading-12 paragraphs text-white">
-            Photosnap is a platform for photographers and visual storytellers.
-            We make it easy to share photos, tell stories and connect with
-            others.
+            {t("create-home-text")}
           </h4>
           <div className="flex  inv-views hover:underline hover:text-white cursor-pointer">
-            <p className="text-white mr-4 ">GET AN INVITE </p>
+            <p className="text-white mr-4 ">{t("get-an-invite")} </p>
             <img src={Arrow} className="h-3 mt-1" />
           </div>
         </div>
@@ -47,15 +47,13 @@ function Home() {
         <img src={DeskDesk} className="desk-img" />
         <div className=" px-14 py-8 create ">
           <h2 className="text-black uppercase text-3xl mt-12 mb-4 font-bold">
-            BEAUTIFUL STORIES EVERY TIME
+            {t("beautiful")}
           </h2>
           <p className="opacity-60 leading-12 text-black paragraphs">
-            We provide design templates to ensure your stories look terrific.
-            Easily add photos, text, embed maps and media from other networks.
-            Then share your story with everyone.
+            {t("beautiful-text")}
           </p>
           <div className="flex inv-views hover:underline cursor-pointer">
-            <p className="text-black mr-4 font-bold">VIEW THE STORIES </p>
+            <p className="text-black mr-4 font-bold">{t("view-stories")}</p>
             <img src={ArrowBlack} className="h-3 mt-1" />
           </div>
         </div>
@@ -64,15 +62,13 @@ function Home() {
         <img src={Camera} className="w-full big-img" />
         <div className=" px-14 py-8 create ">
           <h2 className="text-black uppercase text-3xl mt-12 mb-4 font-bold ">
-            DESIGNED FOR EVERYONE
+            {t("designed")}
           </h2>
           <p className="opacity-60 leading-12 text-black paragraphs">
-            Photosnap can help you create stories that resonate with your
-            audience. Our tool is designed for photographers of all levels,
-            brands, businesses you name it.{" "}
+            {t("designed-text")}
           </p>
           <div className="flex inv-views hover:underline cursor-pointer">
-            <p className="text-black mr-4 font-bold">VIEW THE STORIES </p>
+            <p className="text-black mr-4 font-bold">{t("view-stories")}</p>
             <img src={ArrowBlack} className="h-3 mt-1" />
           </div>
         </div>
@@ -84,11 +80,11 @@ function Home() {
         <div className="relative mountain">
           <img src={Mountain} className="w-full mount" />
           <div className="absolute bottom-0 left-0 w-full p-8">
-            <h2 className="text-white text-xl font-bold">The Mountains</h2>
-            <p>by John Appleseed</p>
+            <h2 className="text-white text-xl font-bold"> {t("mountains")}</h2>
+            <p> {t("by")} John Appleseed</p>
             <hr className="opacity-25 mt-2" />
             <div className="flex justify-between  mt-4">
-              <p className="text-white  font-bold">READ STORY </p>
+              <p className="text-white  font-bold"> {t("read")}</p>
               <img src={Arrow} className="h-3 mt-1" />
             </div>
           </div>
@@ -97,11 +93,11 @@ function Home() {
         <div className="relative cityscape">
           <img src={Cityscape} className="w-full" />
           <div className="absolute bottom-0 left-0 w-full p-8">
-            <h2 className="text-white text-xl font-bold">Sunset Cityscapes</h2>
-            <p>by Benjamin Cruz</p>
+            <h2 className="text-white text-xl font-bold"> {t("cityscapes")}</h2>
+            <p> {t("by")} Benjamin Cruz</p>
             <hr className="opacity-25 mt-2" />
             <div className="flex mt-4 justify-between">
-              <p className="text-white mr-4 font-bold">READ STORY </p>
+              <p className="text-white mr-4 font-bold"> {t("read")} </p>
               <img src={Arrow} className="h-3 mt-1" />
             </div>
           </div>
@@ -110,11 +106,11 @@ function Home() {
         <div className="relative voyage">
           <img src={Voyage} className="w-full" />
           <div className="absolute bottom-0 left-0 w-full p-8">
-            <h2 className="text-white text-xl font-bold">18 Days Voyage</h2>
-            <p>by Alexei Borodin</p>
+            <h2 className="text-white text-xl font-bold"> {t("voyage")}</h2>
+            <p> {t("by")}Alexei Borodin</p>
             <hr className="opacity-25 mt-2" />
             <div className="flex mt-4 justify-between">
-              <p className="text-white mr-4 font-bold">READ STORY </p>
+              <p className="text-white mr-4 font-bold"> {t("read")} </p>
               <img src={Arrow} className="h-3 mt-1" />
             </div>
           </div>
@@ -123,11 +119,14 @@ function Home() {
         <div className="relative architecture">
           <img src={Architecture} className="w-full" />
           <div className="absolute bottom-0 left-0 w-full p-8">
-            <h2 className="text-white text-xl font-bold">Architecturals</h2>
-            <p>by Samantha Brooke</p>
+            <h2 className="text-white text-xl font-bold">
+              {" "}
+              {t("architecturals")}
+            </h2>
+            <p> {t("by")} Samantha Brooke</p>
             <hr className="opacity-25 mt-2" />
             <div className="flex mt-4 justify-between">
-              <p className="text-white mr-4 font-bold">READ STORY </p>
+              <p className="text-white mr-4 font-bold"> {t("read")} </p>
               <img src={Arrow} className="h-3 mt-1" />
             </div>
           </div>
@@ -136,26 +135,23 @@ function Home() {
       <div className="details">
         <div className="p-8 text-center pt-16">
           <img src={Gadgets} className="mx-auto" />
-          <h2 className="font-bold py-4 pt-12">100% Responsive</h2>
+          <h2 className="font-bold py-4 pt-12">{t("responsive")}</h2>
           <p className="text-black opacity-60 px-14 leading-6">
-            No matter which the device you’re on, our site is fully responsive
-            and stories look beautiful on any screen.
+            {t("responsive-text")}
           </p>
         </div>
         <div className="p-8 text-center pt-16">
           <img src={Infinity} className="mx-auto" />
-          <h2 className="font-bold py-4 pt-12">No Photo Upload Limit</h2>
+          <h2 className="font-bold py-4 pt-12">{t("limit")}</h2>
           <p className="text-black opacity-60 px-14 leading-6">
-            Our tool has no limits on uploads or bandwidth. Freely upload in
-            bulk and share all of your stories in one go.
+            {t("limit-text")}
           </p>
         </div>
         <div className="p-8 text-center pt-16 mb-16">
           <img src={Socials} className="mx-auto" />
-          <h2 className="font-bold py-4 pt-12">Available to Embed</h2>
+          <h2 className="font-bold py-4 pt-12">{t("embed")}</h2>
           <p className="text-black opacity-60 px-14 leading-6">
-            Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube
-            videos, Google Maps, and more.
+            {t("embed-text")}
           </p>
         </div>
       </div>

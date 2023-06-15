@@ -8,8 +8,10 @@ import Logo from "../../assets/logo-light.png";
 import Arrow from "../../assets/arrow.png";
 import "./Footer.css";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const { t } = useTranslation();
   return (
     <footer className="bg-black  foot-wrapper">
       <img src={Logo} className=" logo" />
@@ -23,21 +25,21 @@ function Footer() {
       </div>
       <div className="nav">
         <Link to="/home">
-          <p>HOME</p>
+          <p>{t("home")}</p>
         </Link>
         <Link to="/stories">
-          <p>STORIES</p>
+          <p>{t("stories")}</p>
         </Link>
         <Link to="/features">
-          <p>FEATURES</p>
+          <p>{t("features")}</p>
         </Link>
         <Link to="/pricing">
-          <p>PRICING</p>
+          <p>{t("pricing")}</p>
         </Link>
       </div>
       <div className="flex invite">
         <p className="text-white mr-4 hover:underline hover:text-white cursor-pointer">
-          GET AN INVITE{" "}
+          {t("get-an-invite")}
         </p>
         <img src={Arrow} className="h-4 " />
       </div>

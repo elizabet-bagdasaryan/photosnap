@@ -138,6 +138,7 @@
 
   .limit {
     grid-area: limit;
+    margin-top: 40px;
   }
 
   .responsive {

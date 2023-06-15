@@ -4,9 +4,10 @@ import Logo from "../../assets/logo.png";
 import Hamburger from "../../assets/hamburger.jpg";
 import Cross from "../../assets/cross.png";
 import { Link } from "react-router-dom";
-
+import { useTranslation } from "react-i18next";
 function Header() {
   const [menuVisible, setMenuVisible] = useState(false);
+  const { t } = useTranslation();
 
   function handleMenuVisibility() {
     setMenuVisible((prevState) => !prevState);
@@ -33,36 +34,36 @@ function Header() {
 
         <div className="navbar">
           <Link to="/home">
-            <p>HOME</p>
+            <p>{t("home")}</p>
           </Link>
           <Link to="/stories">
-            <p>STORIES</p>
+            <p>{t("stories")}</p>
           </Link>
           <Link to="/features">
-            <p>FEATURES</p>
+            <p>{t("features")}</p>
           </Link>
           <Link to="/pricing">
-            <p>PRICING</p>
+            <p>{t("pricing")}</p>
           </Link>
         </div>
-        <p className="get-invite">GET AN INVITE</p>
+        <p className="get-invite">{t("get-an-invite")}</p>
       </div>
       <div
         style={{ display: menuVisible ? "block" : "none" }}
         className="menu-mobile px-7"
       >
         <Link to="/stories">
-          <p>STORIES</p>
+          <p>{t("stories")}</p>
         </Link>
         <Link to="/features">
-          <p>FEATURES</p>
+          <p>{t("features")}</p>
         </Link>
         <Link to="/pricing">
-          <p>PRICING</p>
+          <p>{t("pricing")}</p>
         </Link>
         <hr />
         <p className="w-full bg-black py-3 " id="get-invite">
-          GET AN INVITE
+          {t("get-an-invite")}
         </p>
       </div>
     </>
