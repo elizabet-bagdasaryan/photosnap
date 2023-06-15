@@ -5,7 +5,7 @@ import Hamburger from "../../assets/hamburger.jpg";
 import Cross from "../../assets/cross.png";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import Language from "../../Language";
+import Language from "../../Languages/Language";
 
 function Header() {
   const [menuVisible, setMenuVisible] = useState(false);
@@ -50,7 +50,7 @@ function Header() {
           </Link>
           <Language />
         </div>
-        <p className="get-invite">{t("get-an-invite")}</p>
+        <p className="get-invite ">{t("get-an-invite")}</p>
       </div>
 
       <div
