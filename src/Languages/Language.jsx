@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import EnglishFlag from "./assets/uk.png";
-import GeorgianFlag from "./assets/geo.png";
+import EnglishFlag from "../assets/uk.png";
+import GeorgianFlag from "../assets/geo.png";
 import "./Language.css";
 
 const Language = () => {
