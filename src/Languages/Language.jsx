@@ -32,13 +32,13 @@ const Language = () => {
         src={EnglishFlag}
         alt="English"
         onClick={handleBothEng}
-        style={{ display: flagVisible ? "none" : "block" }}
+        style={{ display: flagVisible ? "block" : "none" }}
       />
       <img
         src={GeorgianFlag}
         alt="Georgian"
         onClick={handleBothGeo}
-        style={{ display: flagVisible ? "block" : "none" }}
+        style={{ display: flagVisible ? "none" : "block" }}
       />
     </div>
   );
