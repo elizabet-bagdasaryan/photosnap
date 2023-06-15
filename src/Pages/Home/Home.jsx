@@ -45,7 +45,7 @@ function Home() {
         <img src={Desk} className="w-full big-img" />
         <img src={DeskTab} className="tab-img" />
         <img src={DeskDesk} className="desk-img" />
-        <div className=" px-14 py-8 create ">
+        <div className=" px-14 py-8 create " id="desk-create">
           <h2 className="text-black uppercase text-3xl mt-12 mb-4 font-bold">
             {t("beautiful")}
           </h2>

@@ -1,20 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import EnglishFlag from "./assets/uk.png";
+import GeorgianFlag from "./assets/geo.png";
+import "./Language.css";
 
 const Language = () => {
   const { i18n } = useTranslation();
+  const [flagVisible, setFlagVisible] = useState(false);
 
-  const changeLanguage = (event) => {
-    const selectedLanguage = event.target.value;
-    i18n.changeLanguage(selectedLanguage);
+  function handleFlagVisibility() {
+    setFlagVisible((prevState) => !prevState);
+  }
+
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
+
+  const handleBothGeo = () => {
+    handleFlagVisibility();
+    changeLanguage("geo");
+  };
+
+  const handleBothEng = () => {
+    handleFlagVisibility();
+    changeLanguage("en");
   };
 
   return (
-    <div>
-      <select onChange={changeLanguage} defaultValue={i18n.language}>
-        <option value="en">English</option>
-        <option value="es">Georgian</option>
-      </select>
+    <div className="languages">
+      <img
+        src={EnglishFlag}
+        alt="English"
+        onClick={handleBothEng}
+        style={{ display: flagVisible ? "none" : "block" }}
+      />
+      <img
+        src={GeorgianFlag}
+        alt="Georgian"
+        onClick={handleBothGeo}
+        style={{ display: flagVisible ? "block" : "none" }}
+      />
     </div>
   );
 };

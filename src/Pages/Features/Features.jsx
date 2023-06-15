@@ -15,7 +15,7 @@ import { useTranslation } from "react-i18next";
 function Features() {
   const { t } = useTranslation();
   return (
-    <>
+    <div className="features-component">
       <div className="feature">
         <img src={Photograph} className="w-full photo-mob" />
         <div className="feature-texts">
@@ -90,7 +90,7 @@ function Features() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

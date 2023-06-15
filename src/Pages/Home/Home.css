@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .create h2 {
   line-height: 50px;
 }
@@ -173,11 +177,11 @@
     font-size: 40px;
     margin-top: 150px;
   }
-  /* .paragraphs {
-      margin-right: 0;
-      width: 390px;
-    } */
+
   .details div:nth-child(2) {
     margin-top: 40px;
+  }
+  #desk-create {
+    width: 40%;
   }
 }

@@ -1,3 +1,7 @@
+.features-component {
+  overflow-x: hidden;
+}
+
 .line {
   background: linear-gradient(
     26.57deg,
@@ -169,7 +173,12 @@
 
   .create-feat {
     padding: 8vw 4vw;
-    width: 44vw;
+    width: 39vw;
+  }
+  .create-feat p {
+    margin-top: 2vw;
+    line-height: 40px;
+    font-size: 18px;
   }
   .beta h2 {
     margin-left: 6vw;

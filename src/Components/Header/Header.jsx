@@ -5,6 +5,8 @@ import Hamburger from "../../assets/hamburger.jpg";
 import Cross from "../../assets/cross.png";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import Language from "../../Language";
+
 function Header() {
   const [menuVisible, setMenuVisible] = useState(false);
   const { t } = useTranslation();
@@ -26,6 +28,7 @@ function Header() {
     <>
       <div className="header ">
         <img src={Logo} className="h-4"></img>
+
         <img
           src={menuVisible ? Cross : Hamburger}
           className="py-1 hamburger"
@@ -45,9 +48,11 @@ function Header() {
           <Link to="/pricing">
             <p>{t("pricing")}</p>
           </Link>
+          <Language />
         </div>
         <p className="get-invite">{t("get-an-invite")}</p>
       </div>
+
       <div
         style={{ display: menuVisible ? "block" : "none" }}
         className="menu-mobile px-7"
@@ -61,6 +66,7 @@ function Header() {
         <Link to="/pricing">
           <p>{t("pricing")}</p>
         </Link>
+        <Language />
         <hr />
         <p className="w-full bg-black py-3 " id="get-invite">
           {t("get-an-invite")}

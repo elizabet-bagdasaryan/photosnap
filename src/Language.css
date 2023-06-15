@@ -1,0 +1,28 @@
+.languages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.languages img:nth-child(1) {
+  height: 40px;
+  width: 50px;
+  margin-right: 4px;
+}
+.languages img:nth-child(2) {
+  height: 24px;
+  width: 50px;
+}
+@media (min-width: 768px) {
+  .languages {
+    display: block;
+  }
+}
+@media (min-width: 1336px) {
+  .languages {
+    display: flex;
+  }
+  .languages img {
+    cursor: pointer;
+    margin-left: 4vw;
+  }
+}
