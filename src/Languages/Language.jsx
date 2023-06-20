@@ -6,24 +6,16 @@ import "./Language.css";
 
 const Language = () => {
   const { i18n } = useTranslation();
-  const [flagVisible, setFlagVisible] = useState(false);
-
-  function handleFlagVisibility() {
-    setFlagVisible((prevState) => !prevState);
-  }
+  const [showEnglishFlag, setShowEnglishFlag] = useState(true);
 
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
   };
 
-  const handleBothGeo = () => {
-    handleFlagVisibility();
-    changeLanguage("geo");
-  };
-
-  const handleBothEng = () => {
-    handleFlagVisibility();
-    changeLanguage("en");
+  const handleFlagToggle = () => {
+    setShowEnglishFlag((prevState) => !prevState);
+    const language = showEnglishFlag ? "geo" : "en";
+    changeLanguage(language);
   };
 
   return (
@@ -31,14 +23,14 @@ const Language = () => {
       <img
         src={EnglishFlag}
         alt="English"
-        onClick={handleBothEng}
-        style={{ display: flagVisible ? "block" : "none" }}
+        onClick={handleFlagToggle}
+        className={`flag ${showEnglishFlag ? "visible" : "hidden"}`}
       />
       <img
         src={GeorgianFlag}
         alt="Georgian"
-        onClick={handleBothGeo}
-        style={{ display: flagVisible ? "none" : "block" }}
+        onClick={handleFlagToggle}
+        className={`flag ${showEnglishFlag ? "hidden" : "visible"}`}
       />
     </div>
   );

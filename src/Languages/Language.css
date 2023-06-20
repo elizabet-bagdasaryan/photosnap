@@ -3,26 +3,49 @@
   align-items: center;
   justify-content: center;
 }
+
+.languages img {
+  cursor: pointer;
+  opacity: 0;
+  margin-left: 6px;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+}
+
 .languages img:nth-child(1) {
   height: 40px;
-  width: 50px;
+  width: 40px;
   margin-right: 4px;
 }
 .languages img:nth-child(2) {
   height: 24px;
-  width: 50px;
+  width: 40px;
 }
-@media (min-width: 768px) {
-  .languages {
-    display: block;
+
+.languages img.visible {
+  animation-name: fade-in;
+  animation-fill-mode: forwards;
+}
+
+.languages img.hidden {
+  animation-name: fade-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
-@media (min-width: 1336px) {
-  .languages {
-    display: flex;
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
   }
-  .languages img {
-    cursor: pointer;
-    margin-left: 4vw;
+  100% {
+    opacity: 0;
   }
 }
