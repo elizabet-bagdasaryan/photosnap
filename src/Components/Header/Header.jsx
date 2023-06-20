@@ -14,6 +14,7 @@ function Header() {
   function handleMenuVisibility() {
     setMenuVisible((prevState) => !prevState);
   }
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
@@ -24,9 +25,10 @@ function Header() {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
   return (
     <>
-      <div className="header ">
+      <div className="header">
         <img src={Logo} className="h-4"></img>
 
         <img
@@ -53,10 +55,7 @@ function Header() {
         <p className="get-invite ">{t("get-an-invite")}</p>
       </div>
 
-      <div
-        style={{ display: menuVisible ? "block" : "none" }}
-        className="menu-mobile px-7"
-      >
+      <div className={`menu-mobile px-7 ${menuVisible ? "visible" : ""}`}>
         <Link to="/stories">
           <p>{t("stories")}</p>
         </Link>

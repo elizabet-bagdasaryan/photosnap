@@ -28,6 +28,16 @@
   letter-spacing: 4px;
 }
 
+.menu-mobile {
+  display: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.menu-mobile.visible {
+  display: block;
+  opacity: 1;
+}
+
 @media (min-width: 768px) {
   .menu-mobile {
     display: none;
